@@ -26,7 +26,7 @@ body{
     left:0;
     width:100%;
     height: 147px;
-    background-color: rgb(222, 222, 222, 0.98);
+    background-color: rgb(222, 222, 222, 0.58);
     backdrop-filter: blur(20px);
     z-index:100;
 }
@@ -183,7 +183,7 @@ cursor:pointer;
 
 .event-card{
     display: flex;
-    width: 405px;
+    width: 404px;
     margin: 0 30px 120px;
     max-width: 100%;
     min-height: 280px;
@@ -273,3 +273,37 @@ cursor:pointer;
     margin-right:50;
 
 }
+
+.resrve{
+    display:grid;
+    width:100%;
+    gap:67px 150px;grid-template-columns: 405px;
+    grid-template-areas: 
+    "checkbox scheme"
+    "order legend";
+}
+
+.resrve__checkbox{
+grid-area:checkbox;
+background-color:red;
+height: 100px;
+}
+
+.resrve__scheme{
+grid-area:scheme;
+background-color:yellow;
+height: 100px;
+}
+
+.resrve__order{
+    grid-area:order;
+    background-color:green;   
+    height: 100px;
+ }
+
+.resrve__legend{
+ grid-area:legend;
+ background-color:blue;
+ height: 100px;
+}
+    
