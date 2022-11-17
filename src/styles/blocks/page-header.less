@@ -7,14 +7,13 @@
     background-color: rgb(222, 222, 222, 0.58);
     backdrop-filter: blur(20px);
     z-index:100;
-}
+
 
 @supports (backdrop-filter: blur (20px)) {
-    .page-header{
-        background-color: rgb(222, 222, 222, 0.98);
+    background-color: rgb(222, 222, 222, 0.98);
     backdrop-filter: blur(20px);
     }
-}
+
 
 &__container {
     box-sizing:border-box;
@@ -60,12 +59,17 @@ height:100%;
     line-height: 25px;
     color: #1f1e1e;
     transition: color 0.2s;
+
+    &:hover{color:#bc3324}
+    &:active{color:red}
 }
 
-&:hover{
+}
+
+/*&:hover{
     color: #bc3324;
 }
 
 &:active{
     color:red;
-}
+}*/

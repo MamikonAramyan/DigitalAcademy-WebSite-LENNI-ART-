@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
+@@include('blocks/header.html')
 
 <head>
 <meta charset = "utf-8" />
-<link rel="stylesheet" href="style/styles.css">
+<link rel="stylesheet" href="C:\Users\Мамикон\Desktop\Front-end Разработка\src\styles\styles.less" />
 <title>LENNI Art</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,23 +12,19 @@
 </head>
 
 <body class="body">
-    <header class="page-header">
-      <div class="page-header__container">
-        <a href="#" class="page-header__logo">
-          <svg class="page-header__logo-icon" wigth="202" height="147">
-            <use xlink:href="assets/icons/symbols.svg#logo"></use>
-          </svg>
-        </a>
+
+  @@include('blocks/page-header.html')
+
           
-        <nav class="page-header__nav">
+<nav class="page-header__nav">
 <a href="events.html"; class="page-header__nav-link">Мероприятия</a>
 <a href="#"; class="page-header__nav-link">Блог</a>
 <a href="#"; class="page-header__nav-link">О нас</a>
 <a href="#"; class="page-header__nav-link">Контакты</a>
         </nav>
-        <div class="page-header__rigth-block">
-        <a href="#" class="btn page-header__user-btn">Войти</a>
 
+        <div class="page-header__rigth-block">
+        <a href="#" class="btn page-header__btn btn">Войти</a>
       </div>
       </div>
 
@@ -36,6 +33,7 @@
 
 
 <main class="main"></main>
+@@include('blocks/page-footer.html')
 
    
 <footer class="page-footer">
