@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('blocks/head.html')
 
-<body class="body">
+    @@include('blocks/head.html')
 
-  @@include('blocks/page-header.html')
+    <body class="body">
 
-          <main class="main">
-            <div class="home">@@include('blocks/blog-listing.html')</div>
-          </main>
-   
-<footer class="page-footer">
-  <p>Footer</p>
-</footer>
+        @@include('blocks/page-header.html')
 
-</main>
-</body>
+        <main>
+
+            @@include('blocks/section-main.html')
+
+            @@include('blocks/blog-listing.html')
+
+        </main>
+
+        @@include('blocks/page-footer.html')
+
+    </body>
 </html>
-

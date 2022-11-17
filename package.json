@@ -1,8 +1,8 @@
 {
-    "name": "course_front",
+    "name": "course-front-vz",
     "version": "1.0.5",
     "description": "course frontend junior",
-    "author": "@mamikonaramyan@mail.ru",
+    "author": "https://github.com/hisa-prog",
     "devDependencies": {
         "autoprefixer": "^10.4.2",
         "browser-sync": "^2.27.7",
