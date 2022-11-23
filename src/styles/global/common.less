@@ -40,3 +40,30 @@ a {
   width: 100%;
   height: 100%;
 }
+
+input,
+textarea,
+select{
+  box-shadow:none;
+  outline: none;
+  color:@black;
+  font-family:@font-Lora;
+}
+
+textarea{
+  resize:none;
+}
+
+input, 
+textarea{
+  &::placeholder{
+    color:#6c6c6c;
+  }
+}
+
+input:focus,
+textarea:focus{
+  &::placeholder{
+    color:transparent;
+  }
+}

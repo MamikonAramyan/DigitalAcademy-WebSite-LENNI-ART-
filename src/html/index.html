@@ -6,16 +6,19 @@
     <body class="body">
 
         @@include('blocks/page-header.html')
+        <main class="main">
 
-        <main>
-
+            <div class="home">
             @@include('blocks/section-main.html')
 
             @@include('blocks/blog-listing.html')
-
+        </div>
         </main>
 
+<footer class="page-footer">
         @@include('blocks/page-footer.html')
-
+    </footer>
+    
+    @@include('blocks/pp-form.html')
     </body>
 </html>
