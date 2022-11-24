@@ -2,10 +2,46 @@
     <div class="pp__block">
 
         <form class="form">
-            <!--Разметка однострочного поля ввода (для <input>)-->
 
-            <label class="filed form__filed">
-                <span class="field__label1:">Планируемое количество посетителей:</span>
+            <div class="form__radio radio">
+                <span class="field__title">Форма мероприятия:</span>
+                <label class="radio__item">
+                    <input type="radio"
+                    class="radio__input" name="Формат" value="Семинар" checked>
+                    <span class="radio__mark"></span>
+                    <span class="radio__name">Мастер-класс/семинар</span>
+                </label>
+            </div>
+
+            <div class="form__radio radio">
+                <label class="radio__item">
+                    <input type="radio"
+                    class="radio__input" name="Формат" value="Концерт">
+                    <span class="radio__mark"></span>
+                    <span class="radio__name">Концерт/выступление</span>
+                </label>
+            </div>
+
+            <div class="form__radio radio">
+                <label class="radio__item">
+                    <input type="radio"
+                    class="radio__input" name="Формат" value="Выставка">
+                    <span class="radio__mark"></span>
+                    <span class="radio__name">Выставка/показ</span>
+                </label>
+            </div>
+
+            <div class="form__radio radio">
+                <label class="radio__item">
+                    <input type="radio"
+                    class="radio__input" name="Формат" value="Другое">
+                    <span class="radio__mark"></span>
+                    <span class="radio__name">Другое</span>
+                </label>
+            </div>
+
+            <label class="field form__field">
+                <span class="field__title">Планируемое количество посетителей:</span>
                 <select name="Количество" class="field__select"> 
                 <option value="20">до 20 человек</option>
                 <option value="100">от 20 до 100 человек</option>
@@ -26,7 +62,7 @@
 
             <label class="field form__field">
                 <span class="field__label1:">Телефон*</span>
-                <input class="field__input" type="tel" placeholder="+7(___)___ __ __" name="Телефон" required>
+                <input class="field__input" type="tel" placeholder="+7 (___)___ __ __" name="Телефон" required>
             </label>
 
             <label class="field form__field">
@@ -39,6 +75,16 @@
                     <span class="field__title">Есть пожелания? Напишите нам: </span>
                     <textarea class="field__textarea" name="Пожелания"></textarea>
                 </label>
+
+                <label class="check">
+                    <input type="checkbox" class="check__input" name="Согласие" required/>
+
+                    <span class="check__mark"></span>
+                    <span class="check__label">Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных</span>
+                </label>
+                <button type="submit" class="check__btn-send">Отправить</button>
+                <button type="reset" class="check__btn-close">Закрыть</button>
+
         </form>
     </div>
 </div>

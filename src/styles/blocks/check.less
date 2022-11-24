@@ -1,0 +1,115 @@
+.check{
+    box-sizing:border-box;
+    position:relative;
+    display:inline-flex;
+    flex-direction: column;
+    padding-top:20px;
+    align-items:center;
+    min-height:24px;
+    //padding-left:24px;
+    padding-left:50px;
+    color:@black;
+    cursor:pointer;
+
+&__input{
+
+    .is-hidden;
+    &:checked{
+        &~ .check__mark{
+            background-color:@black;
+
+            &::after{
+                content:"";
+                display: block;
+                position: absolute;
+                left:4px;
+                top:5px;
+                width:12px;
+                height:6px;
+                border-left: 2px solid @white;
+                border-bottom: 2px solid @white;
+                transform:rotate(-48deg);
+
+            }
+        }
+    }
+}
+&__mark{
+    box-sizing: border-box;
+    display:block;
+    margin-top: 20px;
+    position: absolute;
+    left:0;
+    top:0;
+    border: 1px solid @black;
+    width:24px;
+    height:24px;
+}
+
+&__label{
+    font-family:@font-Open;
+    font-size:16px
+}
+
+&__btn-send{
+    display:inline-block;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    border: 1px solid @black;
+    margin-top:20px;
+    background-color:transparent;
+    outline: none;
+    color:@black;    
+    font-family: @font-Open;
+    font-weight:600px;
+    font-size:16px;
+    font-style: normal;
+    line-height:22px;
+    width: 401px;
+    height: 52px;
+    left: 170px;
+    top: 907px;
+    text-align:center;
+    text-decoration:none;
+    transition:color 0.2s, background-color 0.2s, border-color 0.2s;
+    &:hover,
+    &:active{
+        color:@white;
+        background-color:@black;
+    }
+    overflow:hidden;
+    cursor:pointer;
+}
+
+&__btn-close{
+    display:inline-block;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    margin-top:20px;
+    background-color:transparent;
+    border: transparent;
+    outline: none;
+    color:@black;    
+    font-family: @font-Open;
+    font-weight:600px;
+    font-size:16px;
+    font-style: normal;
+    line-height:22px;
+    width: 401px;
+    height: 52px;
+    left: 170px;
+    top: 907px;
+    text-align:center;
+    text-decoration:none;
+    transition:color 0.2s, background-color 0.2s, border-color 0.2s;
+    &:hover,
+    &:active{
+        border: 1px solid @black;
+        color:@white;
+        background-color:@black;
+    }
+    overflow:hidden;
+    cursor:pointer;
+}
+
+}
